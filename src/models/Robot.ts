@@ -3,6 +3,7 @@ import { NORTH, DIRECTION_MAP } from "../constants/directions";
 import { DirectionName } from "../interfaces";
 
 export class RobotSimulation {
+    
     private coordinates = [0, 0];
   
     private min = [0, 0];
