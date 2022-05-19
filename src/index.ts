@@ -8,8 +8,14 @@ const inputLines: string[] = readFileSync(
   "utf8"
 ).split("\n");
 
+// Instantiate the Robot model/class and passes in our input file
 const robot = new RobotSimulation(inputLines.shift() as string);
 
+/**
+ * Iterates over every single input in the Input file 
+ * 
+ * then sets the position of the instruction and makes the robot move using the inserted instructions e.g RLLLFL.
+*/
 while (inputLines.length) {
   robot.setPosition(inputLines.shift() as string);
 

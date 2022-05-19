@@ -49,3 +49,9 @@ LLFFFLFLFL
 3 3 N LOST
 3 3 N LOST
 2 3 S
+
+## Next Steps or What I could have done better:
+
+1. Write Unit Test to test if input file was readable and if it comforms to the expected robot direction format and expected arguments
+
+2. A unit test to access each functions in the Robot model against the `setPosition()` method and the `makeMove()` method

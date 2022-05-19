@@ -3,13 +3,19 @@ import { NORTH, DIRECTION_MAP } from "../constants/directions";
 import { DirectionName } from "../interfaces";
 
 export class RobotSimulation {
-    
+
     private coordinates = [0, 0];
   
     private min = [0, 0];
     private max = [MAX_POSSIBLE, MAX_POSSIBLE];
     private direction = NORTH;
   
+    /**
+     * Robots constructor to build the maximum possible value and to validate maximum expected value.
+     *
+     * @param {string} maxStr the maximum number of string.
+     * 
+     */
     constructor(maxStr: string) {
       const max = maxStr
         .split(" ")
@@ -19,6 +25,12 @@ export class RobotSimulation {
       this.max = max;
     }
 
+    /**
+     * Setter that helps sets the Robots position.
+     *
+     * @param {string} position the robot position.
+     * 
+     */
     setPosition(position: string) {
         const positionData = position.split(" ");
 
@@ -38,6 +50,13 @@ export class RobotSimulation {
         this.direction = direction;
     }
     
+    /**
+     * Manipulates the Robot position using the set of instruction given from the input file.
+     *
+     * @param {string} instructionStr the robot position.
+     * 
+     * @return {string} Basically returns the robots coordinates and it's current direction.
+     */
     makeMove(instructionStr: string) {
 
         const instructions = instructionStr.split("");
