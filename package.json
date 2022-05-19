@@ -1,0 +1,29 @@
+{
+    "name": "mars-rover",
+    "version": "0.0.1",
+    "description": "Martian Robot Mars Robot",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "lint": "eslint . --ext .ts",
+      "start": "ts-node src/index.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/node": "*",
+      "@typescript-eslint/eslint-plugin": "*",
+      "@typescript-eslint/parser": "*",
+      "eslint": "*",
+      "eslint-config-airbnb-base": "*",
+      "eslint-config-prettier": "*",
+      "eslint-plugin-import": "*",
+      "eslint-plugin-prettier": "*",
+      "prettier": "*",
+      "typescript": "*"
+    },
+    "dependencies": {
+      "ts-node": "^10.7.0"
+    }
+  }
+  
